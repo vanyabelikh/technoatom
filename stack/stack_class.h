@@ -1,23 +1,18 @@
-//
-//  Header.h
-//  stack
-//
-//  Created by Иван Белых on 27.02.17.
-//  Copyright © 2017 Иван Белых. All rights reserved.
-//
-
-#ifndef Header_h
-#define Header_h
-
-
-#endif /* Header_h */
-
+//--------------------------------------
+//!@file stack_class.h
+//!@brief Implements a stack class
+//!@author vanyabelikh, 2017
+//--------------------------------------
 
 #include <cassert>
 #include <math.h>
 #include <fstream>
 
 using namespace std;
+
+//--------------------------------------
+//@def A macro to check if stack isn't damaged by other functions
+//--------------------------------------
 
 #define ASSERT_OK()\
 if (!ok())\
@@ -26,18 +21,46 @@ dump();\
 assert(!"object is ok");\
 }\
 
+//--------------------------------------
+//@class Stack
+//@brief A Stack class
+/*!
+ * A Stack class created by vanyabelikh for Technoatom courses
+ */
+//--------------------------------------
 class Stack{
 public:
-    typedef float value_type;
+    typedef float value_type;///< of the value stored in the stack
     
+    //--------------------------------------
+    //!Shows the top value of the stack
+    //!@return top value (NaN if stack is empty)
+    //--------------------------------------
     value_type top();
     
+    //--------------------------------------
+    //!Shows if stack is empty
+    //!@return bool-type result of an operation (true of false)
+    //--------------------------------------
     bool empty();
     
+    //--------------------------------------
+    //!Shows cut the top value of the stack
+    //!@return bool-type result of an operation (true of false)
+    //--------------------------------------
     bool pop();
     
+    //--------------------------------------
+    //!Pushes the value to the stack
+    //!@param value to be pushed
+    //!@return void-type (nothing)
+    //--------------------------------------
     void push(value_type value_to_push);
     
+    //--------------------------------------
+    //!Returns the size of the stack
+    //!@return the size of the stack
+    //--------------------------------------
     size_t size();
     
     
