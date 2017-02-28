@@ -8,7 +8,7 @@ using namespace std;
 int main() {
     Stack s1;
     for (int i=0;i<4;i++)
-        s1.push(i+10);
+        s1.push(i+50);
     cout<<s1.size()<<endl;
     for (int i=0;i<6;i++){
         cout<<s1.top()<<endl;

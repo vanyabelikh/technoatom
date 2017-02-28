@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC0B21341E64B4BE00C1158B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC0B21331E64B4BE00C1158B /* main.cpp */; };
+		DC0B21541E662BE800C1158B /* Tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC0B21521E662BE800C1158B /* Tests.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		DC0B21331E64B4BE00C1158B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DC0B213B1E64B5C400C1158B /* stack_class.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack_class.h; sourceTree = "<group>"; };
 		DC0B213C1E64C44700C1158B /* File.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
+		DC0B21521E662BE800C1158B /* Tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tests.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				DC0B21331E64B4BE00C1158B /* main.cpp */,
+				DC0B21521E662BE800C1158B /* Tests.cpp */,
 				DC0B213B1E64B5C400C1158B /* stack_class.h */,
 				DC0B213C1E64C44700C1158B /* File.txt */,
 			);
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC0B21341E64B4BE00C1158B /* main.cpp in Sources */,
+				DC0B21541E662BE800C1158B /* Tests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +254,7 @@
 				DC0B21391E64B4BE00C1158B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -52,8 +52,7 @@ public:
     
     //--------------------------------------
     //!Pushes the value to the stack
-    //!@param value to be pushed
-    //!@return void-type (nothing)
+    //!@param value_to_push to be pushed
     //--------------------------------------
     void push(value_type value_to_push);
     
@@ -62,6 +61,8 @@ public:
     //!@return the size of the stack
     //--------------------------------------
     size_t size();
+    
+    value_type capacity();
     
     
     Stack();
@@ -82,6 +83,10 @@ private:
 
 Stack::Stack(){
     size_=0;
+}
+
+Stack::value_type Stack::capacity(){
+    return capacity_;
 }
 
 size_t Stack::size(){
@@ -125,7 +130,7 @@ bool Stack::ok(){
 
 void Stack::dump(){
     ofstream dump_file;
-    dump_file.open("/Users/IvanBelykh/Desktop/Prog/stack/stack/File.txt");
+    dump_file.open("/Users/IvanBelykh/technoatom/stack/File.txt");
     dump_file<<"size = "<<size_<<endl<<"data:"<<endl;
     for (int i=0;i<capacity_;i++) {
         dump_file<<i<<' ';
